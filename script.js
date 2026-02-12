@@ -440,6 +440,18 @@ gsap.to("#page3",{
     start:`top top`,
     end:`bottom top`,
     pin:true,
-    scroller:`#main`
+    scroller:`#main`,
+    onEnter: () => {
+      const socialLinks = document.querySelector('.social-links');
+      if(socialLinks) socialLinks.classList.add('visible');
+    },
+    onEnterBack: () => {
+      const socialLinks = document.querySelector('.social-links');
+      if(socialLinks) socialLinks.classList.add('visible');
+    },
+    onLeaveBack: () => {
+      const socialLinks = document.querySelector('.social-links');
+      if(socialLinks) socialLinks.classList.remove('visible');
+    }
   }
 })
