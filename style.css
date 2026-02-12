@@ -209,3 +209,57 @@ canvas{
     font-size: 70px;
 
 }
+
+/* Social links sidebar */
+.social-links{
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.social-icon{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    transform: translateX(12px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.social-icon:hover{
+    transform: translateX(18px) scale(1.1);
+    box-shadow: 0 4px 12px rgba(255, 25, 25, 0.3);
+}
+.social-icon svg{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.social-icon span{
+    position: absolute;
+    right: 54px;
+    white-space: nowrap;
+    background: #000;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    opacity: 0;
+    transform: translateX(6px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+}
+.social-icon:hover span{
+    opacity: 1;
+    transform: translateX(0);
+}
