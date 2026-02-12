@@ -131,15 +131,15 @@ canvas{
 }
 #page>h3{
     position: absolute;
-    top: 55%;
+    top: 60%;
     font-family: gilroy;
     font-weight: 400;
     color: #7c7c7c;
-    left: 5%;
+    left: 3%;
 }
 #page>h4{
     position: absolute;
-    top: 62%;
+    top: 70%;
     left: 25%;
     font-family: gilroy;
     font-weight: 500;
@@ -159,8 +159,8 @@ canvas{
 }
 #page1>#left-text{
     position: absolute;
-    top: 50%;
-    right: 10%;
+    top: 43%;
+    right: 9%;
     text-align: end;
 }
 #page1>#left-text>h1{
@@ -189,6 +189,7 @@ canvas{
     top: 55%;
     right: 10%;
     text-align: end;
+
 }
 #page2>#text2>p{
     color: #7c7c7c;
